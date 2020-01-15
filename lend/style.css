@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: url('img/bgr2.jpg') no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+   }
+
+
+#sidebar{
+    position: fixed;     /* адаптировать   */
+    width: 250px;
+    height:100% ;
+    background:#57626f;
+    border-right: 4px solid #E0E5EA;
+    left: -250px;
+
+-moz-transition: all 600ms;
+-webkit-transition: all 600ms;
+transition: all 600ms;
+}
+
+
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li:first-child{
+    text-align: center;
+    color: white;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child){
+    width:90%;    
+    margin-left: 10%;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a{
+    color:#dfe5eb;
+    text-decoration: none;
+}
+
+#sidebar ul li a{color:#59e9df}
+
+#sidebar .toggle-btn {
+    position: absolute ;
+    left: 270px;              /*важно */
+    top:20px;
+    /* background: #E0E5EA; */
+    background: #556270;
+    padding: 10px;
+    border-radius:12px ;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background: #fafafa;}
+ #sidebar .toggle-btn:hover span  {background: #666;}  
+
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 25px;
+    height:4px;
+    background-color: aquamarine;
+    margin:4px 0;
+
+}
+
+.dstr{
+    background-color: aquamarine;
+    border: solid 4px #666;
+    margin:100px 50px 50px 100px;
+    height: 80%;
+    display: inline-block;
+    box-shadow:
+    0 16px 24px 2px rgba(33,37,41,.02),
+    0 6px 30px 5px rgba(33,37,41,.04),
+    0 8px 10px -5px rgba(33,37,41,.1);
+    padding: 20px 10px 10px 20px;
+
+}
+
+
+.r{
+    text-align: center;
+    border-bottom: solid 5px #666;
+    margin-left: 300px;
+    margin-right: 300px;
+  
+}
+
+.frm{
+    text-align: center;
+    margin-left: 110px;
+    border: solid 6px #666;
+    background-color:aquamarine;
+    font-size: xx-large;
+}
+
+
+@media screen and (max-width:700 ){
+    .r{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .frm{
+        font-size:25px
+    }
+}
